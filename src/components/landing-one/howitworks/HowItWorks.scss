@@ -2,6 +2,10 @@
   padding: 8rem 8rem 0 8rem;
   background-size: cover;
 
+  @media only screen and (max-width: 30em) {
+    padding: 2rem 2rem 0 3rem;
+  }
+
   .howitwork {
     background-size: cover;
     background-repeat: no-repeat;
@@ -10,15 +14,25 @@
     align-items: center;
     text-align: center;
     padding: 5.7rem 14rem 6.5rem 14rem;
-
     backdrop-filter: blur(100px);
     border-radius: 4rem;
+
+    @media only screen and (max-width: 30em) {
+      border-radius: 2rem;
+      padding: 2rem 3rem 2rem 3rem;
+      backdrop-filter: none;
+    }
 
     .heading {
       font-size: 5.6rem;
       font-weight: 700;
       color: #0d100a;
       margin-bottom: 2.2rem;
+
+      @media only screen and (max-width: 30em) {
+        font-size: 3rem;
+        font-weight: 600;
+      }
     }
 
     .note {
@@ -26,14 +40,28 @@
       font-weight: 400;
       color: #0d100a;
       margin-bottom: 4.4rem;
+
+      @media only screen and (max-width: 30em) {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+      }
     }
 
     .cards {
       display: flex;
       gap: 4.5rem;
 
+      @media only screen and (max-width: 30em) {
+        flex-direction: column;
+        gap: 2rem;
+      }
+
       .card {
         padding: 44rem 3.7rem 5.6rem 3.7rem;
+
+        @media only screen and (max-width: 30em) {
+          padding: 5rem 1.5rem 2rem 1.5rem;
+        }
 
         .heading {
           font-size: 2.9rem;
@@ -61,5 +89,18 @@
     justify-content: center;
     gap: 8rem;
     margin-top: 7rem;
+
+    @media only screen and (max-width: 30em) {
+      gap: 0.5rem;
+      margin-top: 3rem;
+      justify-content: space-between;
+    }
+
+    img {
+      @media only screen and (max-width: 30em) {
+        height: 3rem;
+        width: 4rem;
+      }
+    }
   }
 }

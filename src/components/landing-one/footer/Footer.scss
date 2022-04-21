@@ -8,16 +8,29 @@
   flex-direction: column;
   align-items: center;
 
+  @media only screen and (max-width: 30em) {
+    margin: 9rem 0 0 0;
+    border-radius: 3rem 3rem 0 0;
+  }
   .questions {
     font-size: 2.1rem;
     font-weight: 400;
     margin-top: 4.5rem;
+
+    @media only screen and (max-width: 30em) {
+      font-size: 1.6rem;
+    }
   }
   .email {
     font-size: 2.9rem;
     font-weight: 400;
     font-family: 'Syne', sans-serif;
     margin-bottom: 6rem;
+
+    @media only screen and (max-width: 30em) {
+      font-size: 2.7rem;
+      margin-bottom: 3rem;
+    }
   }
   .copyright {
     font-size: 1.8rem;

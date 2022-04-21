@@ -24,3 +24,12 @@
     color: #000;
   }
 }
+
+.cellWrapper {
+  display: flex;
+  align-items: center;
+
+  .image {
+    margin-left: 10rem;
+  }
+}

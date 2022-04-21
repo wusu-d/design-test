@@ -9,6 +9,7 @@ import TablePagination from '@mui/material/TablePagination';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import CircularProgress from '@mui/material/CircularProgress';
+import rightarrow from '../../../assets/rightarrow.png';
 import './Cluster.scss';
 import axios from 'axios';
 
@@ -91,12 +92,15 @@ const Cluster = () => {
                 <TableCell className="tableCell">{row.score}</TableCell>
                 <TableCell className="tableCell">{row.members}</TableCell>
                 <TableCell className="tableCell bold">
-                  ₦{moneyLocale.format(row.cummilative_loan_limit)}
+                  <div className="cellWrapper">
+                    ₦{moneyLocale.format(row.cummilative_loan_limit)}
+                    <img src={rightarrow} alt="" className="image" />
+                  </div>
                 </TableCell>
               </StyledTableRow>
             ))}
           </TableBody>
-          <TableRow sx={{ fontSize: 34, fontWeight: 'medium' }}>
+          <TableRow>
             <TablePagination
               rowsPerPageOptions={[10, 25, 100]}
               component="div"

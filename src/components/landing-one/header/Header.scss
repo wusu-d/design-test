@@ -9,16 +9,38 @@
   text-align: center;
   color: #fff;
 
+  @media only screen and (max-width: 30em) {
+    padding: 3rem 2rem 5rem 2rem;
+  }
+
+  .logo {
+    img {
+      @media only screen and (max-width: 30em) {
+        width: 10rem;
+        height: 2rem;
+      }
+    }
+  }
+
   .heading {
     position: relative;
     font-size: 8rem;
     font-weight: 600;
     margin-top: 22rem;
 
+    @media only screen and (max-width: 30em) {
+      font-size: 3rem;
+      margin-top: 4rem;
+    }
+
     span {
       position: absolute;
       top: -5rem;
       left: 29rem;
+
+      @media only screen and (max-width: 30em) {
+        display: none;
+      }
     }
   }
 
@@ -26,17 +48,53 @@
     font-size: 2rem;
     font-weight: 400;
     margin: 1.2rem 0 7.3rem 0;
+
+    @media only screen and (max-width: 30em) {
+      font-size: 1.6rem;
+      margin: 1.2rem 0 4rem 0;
+    }
+  }
+
+  .appstore {
+    @media only screen and (max-width: 30em) {
+      width: 11rem;
+      height: 3rem;
+    }
   }
 
   .phone1 {
     position: absolute;
     top: 38rem;
     left: 0;
+
+    @media only screen and (max-width: 30em) {
+      top: 20rem;
+      left: -3rem;
+    }
+
+    img {
+      @media only screen and (max-width: 30em) {
+        width: 15rem;
+        height: 30rem;
+      }
+    }
   }
 
   .phone2 {
     position: absolute;
     top: 65rem;
     right: 0;
+
+    @media only screen and (max-width: 30em) {
+      top: 20rem;
+      right: 0;
+    }
+
+    img {
+      @media only screen and (max-width: 30em) {
+        width: 15rem;
+        height: 30rem;
+      }
+    }
   }
 }

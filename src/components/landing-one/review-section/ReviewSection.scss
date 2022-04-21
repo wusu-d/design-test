@@ -6,6 +6,11 @@
   gap: 3rem;
   align-items: center;
 
+  @media only screen and (max-width: 30em) {
+    margin-top: 5rem;
+    padding: 0 2rem;
+  }
+
   .avatars {
     display: flex;
     align-items: center;
@@ -17,6 +22,10 @@
     font-weight: 500;
     color: #000;
     text-align: center;
+
+    @media only screen and (max-width: 30em) {
+      font-size: 2rem;
+    }
   }
 
   .user {
@@ -31,6 +40,10 @@
 
     .name {
       font-size: 2rem;
+
+      @media only screen and (max-width: 30em) {
+        font-size: 1.6rem;
+      }
     }
 
     .location {
