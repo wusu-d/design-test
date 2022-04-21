@@ -39,7 +39,15 @@
       left: 29rem;
 
       @media only screen and (max-width: 30em) {
-        display: none;
+        top: -2rem;
+        left: 11rem;
+      }
+
+      img {
+        @media only screen and (max-width: 30em) {
+          height: 3rem;
+          width: 3rem;
+        }
       }
     }
   }
@@ -50,7 +58,7 @@
     margin: 1.2rem 0 7.3rem 0;
 
     @media only screen and (max-width: 30em) {
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       margin: 1.2rem 0 4rem 0;
     }
   }

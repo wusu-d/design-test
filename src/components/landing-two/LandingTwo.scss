@@ -50,7 +50,15 @@
         left: 30rem;
 
         @media only screen and (max-width: 30em) {
-          display: none;
+          top: -2rem;
+          left: 15rem;
+        }
+
+        img {
+          @media only screen and (max-width: 30em) {
+            height: 3rem;
+            width: 3rem;
+          }
         }
       }
     }
@@ -233,7 +241,7 @@
     gap: 2.5rem;
 
     @media only screen and (max-width: 30em) {
-      margin-top: 7rem;
+      margin-top: 10rem;
       padding: 0 3rem;
     }
 
@@ -355,6 +363,18 @@
             display: flex;
             gap: 2rem;
           }
+        }
+      }
+
+      .footlinks {
+        font-size: 2rem;
+        gap: 2rem;
+        display: flex;
+
+        a {
+          display: inline-block;
+          text-decoration: none;
+          color: #fff;
         }
       }
     }

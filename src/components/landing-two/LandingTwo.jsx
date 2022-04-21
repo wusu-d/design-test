@@ -21,6 +21,7 @@ import { ReactComponent as FacebookSVG } from '../../assets/facebook.svg';
 import { ReactComponent as InstagramSVG } from '../../assets/instagram.svg';
 import ReviewSection from '../landing-one/review-section/ReviewSection';
 import './LandingTwo.scss';
+import { Link } from 'react-router-dom';
 
 const LandingTwo = () => {
   return (
@@ -126,6 +127,10 @@ const LandingTwo = () => {
               </div>
               <p className="copyright">© Xissors 2022</p>
             </div>
+          </div>
+          <div className="footlinks">
+            <Link to="/dashboard">Next Page</Link>
+            <Link to="/">Back</Link>
           </div>
         </div>
       </footer>
