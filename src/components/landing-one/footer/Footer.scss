@@ -1,0 +1,27 @@
+.footer {
+  background: #002463;
+  color: #fff;
+  border-radius: 8.8rem 8.8rem 0 0;
+  padding: 6rem 0 3rem 0;
+  margin: 17rem 16rem 0 19rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .questions {
+    font-size: 2.1rem;
+    font-weight: 400;
+    margin-top: 4.5rem;
+  }
+  .email {
+    font-size: 2.9rem;
+    font-weight: 400;
+    font-family: 'Syne', sans-serif;
+    margin-bottom: 6rem;
+  }
+  .copyright {
+    font-size: 1.8rem;
+    font-weight: 400;
+    opacity: 0.5;
+  }
+}

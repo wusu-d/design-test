@@ -1,0 +1,34 @@
+.download-section {
+  position: relative;
+  margin-top: 27rem;
+  padding: 0 45rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+
+  h2 {
+    color: #0d100a;
+    font-size: 5.6rem;
+    font-weight: 700;
+  }
+
+  p {
+    color: #455a64;
+    font-weight: 400;
+    font-size: 1.8rem;
+  }
+
+  .phone3 {
+    position: absolute;
+    top: -70rem;
+    left: 0;
+  }
+
+  .phone4 {
+    position: absolute;
+    top: -50rem;
+    right: 0;
+  }
+}

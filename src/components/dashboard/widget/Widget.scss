@@ -1,0 +1,25 @@
+.widget {
+  width: 26rem;
+  background: #ffffff;
+  border: 1px solid #e2e2ea;
+  border-radius: 20px;
+  padding: 3rem 3.5rem 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  .top {
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #75759e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .amount {
+    font-weight: 600;
+    font-size: 2.4rem;
+    color: #171725;
+  }
+}

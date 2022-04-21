@@ -1,0 +1,26 @@
+.loading-spinner {
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.table {
+  border: 1px solid #e2e2ea;
+
+  .tableHead {
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #75759e;
+  }
+
+  .tableCell {
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #4b545a;
+  }
+
+  .bold {
+    font-weight: 400;
+    color: #000;
+  }
+}

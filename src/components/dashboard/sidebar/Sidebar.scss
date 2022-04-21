@@ -1,0 +1,73 @@
+.sidebar {
+  flex: 1;
+  min-height: 100vh;
+  background: #02212f;
+  box-shadow: inset -1px 0px 0px #e2e2ea;
+
+  .top {
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.3rem;
+    padding: 0 5rem 0 5rem;
+    background-color: #fff;
+
+    .dot {
+      height: 2.8rem;
+      width: 2.8rem;
+      border-radius: 50%;
+      background: rgba(117, 117, 158, 0.06);
+    }
+  }
+
+  .main {
+    padding-left: 4rem;
+
+    ul {
+      list-style: none;
+
+      .title {
+        margin: 2.5rem 0 3.5rem 0;
+        color: #b5b5be;
+        font-size: 1.4rem;
+        font-weight: 400;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: 1.4rem;
+        margin-bottom: 3.5rem;
+        font-weight: 400;
+        font-size: 1.6rem;
+        color: #9999bc;
+        cursor: pointer;
+
+        &:hover {
+          color: #08ccad;
+        }
+      }
+    }
+  }
+
+  .bottom {
+    margin-top: 20rem;
+    padding-left: 4.4rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #9999bc;
+    cursor: pointer;
+
+    .collapse {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-bottom: 3.5rem;
+    }
+
+    div:hover {
+      color: #08ccad;
+    }
+  }
+}
