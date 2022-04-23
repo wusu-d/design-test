@@ -161,11 +161,11 @@
         font-weight: 400;
         font-size: 2rem;
         color: #0d100a;
-        width: 42.4rem;
+        // width: 42.4rem;
         margin: 0 auto;
 
         @media only screen and (max-width: 30em) {
-          width: 100%;
+          //width: 100%;
           font-size: 1.8rem;
         }
       }
@@ -193,6 +193,8 @@
           width: 31rem;
 
           @media only screen and (max-width: 30em) {
+            width: 100%;
+            margin: 0 auto;
             padding: 7rem 2rem 2rem 2rem;
           }
 
