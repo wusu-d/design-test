@@ -31,9 +31,15 @@
         font-size: 1.6rem;
         margin-bottom: 6rem;
       }
+
+      img {
+        width: 13rem;
+        height: 3.7rem;
+      }
     }
 
     .heading {
+      font-family: 'Sofia Sans';
       font-size: 8rem;
       font-weight: 600;
       color: #121212;
@@ -47,7 +53,7 @@
       span {
         position: absolute;
         top: -5rem;
-        left: 30rem;
+        left: 27rem;
 
         @media only screen and (max-width: 30em) {
           top: -2rem;
@@ -74,10 +80,18 @@
       }
     }
 
+    .appstoreBlack {
+      width: 18.6rem;
+      height: 5.5rem;
+    }
+
     .phone1 {
       position: absolute;
       top: 13rem;
-      right: 0;
+      right: 0rem;
+      width: 70.7rem;
+      height: 108rem;
+
       @media only screen and (max-width: 30em) {
         display: none;
       }
@@ -85,8 +99,10 @@
 
     .phone2 {
       position: absolute;
-      top: 28rem;
-      right: 15rem;
+      top: 25rem;
+      right: 7rem;
+      width: 82.3rem;
+      height: 108rem;
 
       @media only screen and (max-width: 30em) {
         display: none;
@@ -108,6 +124,7 @@
       position: absolute;
       top: 0;
       right: 0;
+      z-index: -10;
 
       // @media only screen and (max-width: 30em) {
       //   display: none;
@@ -119,6 +136,7 @@
       opacity: 0.8;
       border-radius: 40px;
       padding: 8.5rem 13rem 19rem 13rem;
+
       text-align: center;
       margin-bottom: 3rem;
 
@@ -127,6 +145,7 @@
       }
 
       .heading {
+        font-family: 'Sofia Sans';
         font-weight: 700;
         font-size: 5.6rem;
         letter-spacing: -0.02em;
@@ -142,8 +161,11 @@
         font-weight: 400;
         font-size: 2rem;
         color: #0d100a;
+        width: 42.4rem;
+        margin: 0 auto;
 
         @media only screen and (max-width: 30em) {
+          width: 100%;
           font-size: 1.8rem;
         }
       }
@@ -176,8 +198,10 @@
 
           .cardImg {
             position: absolute;
-            top: -9rem;
+            top: -6rem;
             left: 7rem;
+            width: 13.7rem;
+            height: 13.7rem;
 
             @media only screen and (max-width: 30em) {
               top: -6rem;
@@ -194,6 +218,7 @@
           }
 
           .heading {
+            font-family: 'Sofia Sans';
             font-weight: 700;
             font-size: 2.9rem;
             color: #121212;
@@ -215,25 +240,49 @@
       justify-content: center;
       gap: 8rem;
 
-      @media only screen and (max-width: 30em) {
-        gap: 0.5rem;
-        margin-top: 3rem;
-        justify-content: space-between;
+      .nbc {
+        width: 8.9rem;
+        height: 8.9rem;
       }
 
-      img {
-        @media only screen and (max-width: 30em) {
-          height: 3rem;
-          width: 4rem;
-        }
+      .fox {
+        width: 5.5rem;
+        height: 5.2rem;
       }
+
+      .cbs {
+        width: 8.9rem;
+        height: 4.4rem;
+      }
+
+      .usatoday {
+        width: 10rem;
+        height: 3.6rem;
+      }
+
+      @media only screen and (max-width: 30em) {
+        display: none;
+        // gap: 0.5rem;
+        // margin-top: 1rem;
+        // flex-direction: column;
+        // flex-wrap: wrap;
+        // align-items: center;
+        // padding: 1rem;
+      }
+
+      // img {
+      //   @media only screen and (max-width: 30em) {
+      //     height: 3rem;
+      //     width: 4rem;
+      //   }
+      // }
     }
   }
 
   .download-section {
     position: relative;
     margin-top: 27rem;
-    padding: 0 45rem;
+    //padding: 0 45rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -246,6 +295,7 @@
     }
 
     h2 {
+      font-family: 'Sofia Sans';
       color: #0d100a;
       font-size: 5.6rem;
       font-weight: 700;
@@ -261,6 +311,10 @@
       font-size: 1.8rem;
     }
 
+    .storeBlack {
+      width: 18.6rem;
+      height: 5.5rem;
+    }
     .phone3 {
       position: absolute;
       top: -70rem;
@@ -292,10 +346,24 @@
       }
 
       img {
+        width: 38.8rem;
+        height: 39.8rem;
         @media only screen and (max-width: 30em) {
           width: 25rem;
           height: 25rem;
         }
+      }
+    }
+
+    .arrow {
+      position: absolute;
+      top: 17rem;
+      left: 45rem;
+      width: 6.3rem;
+      height: 7.7rem;
+
+      @media only screen and (max-width: 30em) {
+        display: none;
       }
     }
   }
@@ -318,11 +386,16 @@
       gap: 5.5rem;
       background: #002463;
       border-radius: 2.4rem 2.4rem 0 0;
-      padding: 7.5rem 0 12.5rem 0;
+      padding: 7.5rem 0 3rem 0;
 
       @media only screen and (max-width: 30em) {
         padding: 2rem 0 3rem 0;
         gap: 3rem;
+      }
+
+      .logo1 {
+        width: 19rem;
+        height: 5.4rem;
       }
 
       .bottom {
@@ -336,12 +409,14 @@
         }
 
         .questions {
+          font-family: 'Sofia Sans';
           font-weight: 400;
           font-size: 2.1rem;
           margin-bottom: 0.5rem;
         }
 
         .email {
+          font-family: 'Syne';
           font-weight: 400;
           font-size: 2.9rem;
 
@@ -351,6 +426,7 @@
         }
 
         .right {
+          font-family: 'Sofia Sans';
           opacity: 0.6;
           display: flex;
           flex-direction: column;

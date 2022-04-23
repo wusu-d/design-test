@@ -12,15 +12,15 @@ const Header = () => {
         <img src={logo} alt="logo" />
       </div>
       <h1 className="heading">
-        Get 40% commission <br /> for your sales
+        Get 40% commission for your sales
         <span>
           <img src={crown} alt="" />
         </span>
       </h1>
 
       <p className="note">
-        We help stylists own their narrative, build an <br /> empire and be
-        their own boss
+        We help stylists own their narrative, build an empire and be their own
+        boss
       </p>
       <img className="appstore" src={appstore} alt="download from app store" />
       <div className="phone1">

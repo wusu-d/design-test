@@ -1,11 +1,24 @@
 .howitwork-section {
   padding: 8rem 8rem 0 8rem;
   background-size: cover;
+  position: relative;
 
   @media only screen and (max-width: 30em) {
     padding: 2rem 2rem 0 3rem;
   }
 
+  .howgradient {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -3;
+
+    @media only screen and (max-width: 30em) {
+      width: 32rem;
+      bottom: 10rem;
+      left: 2rem;
+    }
+  }
   .howitwork {
     background-size: cover;
     background-repeat: no-repeat;
@@ -16,6 +29,7 @@
     padding: 5.7rem 14rem 6.5rem 14rem;
     backdrop-filter: blur(100px);
     border-radius: 4rem;
+    position: relative;
 
     @media only screen and (max-width: 30em) {
       border-radius: 2rem;
@@ -23,7 +37,17 @@
       backdrop-filter: none;
     }
 
+    .workgradient {
+      position: absolute;
+      top: 0;
+
+      @media only screen and (max-width: 30em) {
+        width: 32rem;
+      }
+    }
+
     .heading {
+      font-family: 'Sofia Sans';
       font-size: 5.6rem;
       font-weight: 700;
       color: #0d100a;
@@ -64,6 +88,7 @@
         }
 
         .heading {
+          font-family: 'Sofia Sans';
           font-size: 2.9rem;
           font-weight: 700;
           color: #121212;
@@ -91,9 +116,27 @@
     margin-top: 7rem;
 
     @media only screen and (max-width: 30em) {
-      gap: 0.5rem;
-      margin-top: 3rem;
-      justify-content: space-between;
+      display: none;
+    }
+
+    .nbc {
+      width: 8.9rem;
+      height: 8.9rem;
+    }
+
+    .fox {
+      width: 5.5rem;
+      height: 5.2rem;
+    }
+
+    .cbs {
+      width: 8.9rem;
+      height: 4.4rem;
+    }
+
+    .usatoday {
+      width: 10rem;
+      height: 3.6rem;
     }
 
     img {

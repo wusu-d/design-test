@@ -7,18 +7,14 @@ import usatoday from '../../../assets/usatoday.png';
 import './HowItWorks.scss';
 const HowItWorks = () => {
   return (
-    <div
-      className="howitwork-section"
-      style={{ backgroundImage: `url(${howBackground})` }}
-    >
-      <div
-        className="howitwork"
-        style={{ backgroundImage: `url(${howitwork})` }}
-      >
+    <div className="howitwork-section">
+      <img className="howgradient" src={howBackground} alt="" />
+      <div className="howitwork">
+        <img className="workgradient" src={howitwork} alt="" />
         <h2 className="heading">How it works</h2>
         <p className="note">
-          We help stylists own their narrative, build an empire and be their own
-          boss
+          We help stylists own their narrative, build an <br />
+          empire and be their own boss
         </p>
         <div className="cards">
           <div className="card">
@@ -43,12 +39,12 @@ const HowItWorks = () => {
         </div>
       </div>
       <div className="sponsors">
-        <img src={nbc} alt="sponsor" />
-        <img src={fox} alt="sponsor" />
-        <img src={cbs} alt="sponsor" />
-        <img src={usatoday} alt="sponsor" />
-        <img src={nbc} alt="sponsor" />
-        <img src={fox} alt="sponsor" />
+        <img className="nbc" src={nbc} alt="sponsor" />
+        <img className="fox" src={fox} alt="sponsor" />
+        <img className="cbs" src={cbs} alt="sponsor" />
+        <img className="usatoday" src={usatoday} alt="sponsor" />
+        <img className="nbc" src={nbc} alt="sponsor" />
+        <img className="fox" src={fox} alt="sponsor" />
       </div>
     </div>
   );

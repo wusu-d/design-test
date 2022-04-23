@@ -20,6 +20,7 @@ const Navbar = () => {
           </div>
           <div className="item">
             <NotificationSVG />
+            <span className="greendot"></span>
           </div>
           <div className="user">
             <div className="name">Lanre Olugbade</div>

@@ -8,12 +8,14 @@
   border: 1px solid #e2e2ea;
 
   .tableHead {
+    font-family: inherit;
     font-weight: 400;
     font-size: 1.6rem;
     color: #75759e;
   }
 
   .tableCell {
+    font-family: inherit;
     font-weight: 500;
     font-size: 1.6rem;
     color: #4b545a;
@@ -21,15 +23,59 @@
 
   .bold {
     font-weight: 400;
-    color: #000;
+    color: #000 !important;
   }
 }
 
 .cellWrapper {
   display: flex;
   align-items: center;
+  gap: 5rem;
 
-  .image {
-    margin-left: 10rem;
+  // .image {
+  //   margin-left: 10rem;
+  // }
+}
+
+.css-11xur9t-MuiPaper-root-MuiTableContainer-root {
+  border-radius: 2rem !important;
+}
+
+.css-pdct74-MuiTablePagination-selectLabel,
+.css-levciy-MuiTablePagination-displayedRows,
+.css-6hp17o-MuiList-root-MuiMenu-list {
+  font-family: 'Graphik' !important;
+  font-weight: 400 !important;
+  font-size: 1.4rem !important;
+  line-height: 15px !important;
+  color: #30425a !important;
+
+  opacity: 0.9 !important;
+}
+
+.css-16c50h-MuiInputBase-root-MuiTablePagination-select {
+  font-family: 'Graphik' !important;
+  font-size: 1.4rem !important;
+  background: #ffffff !important;
+  border: 1px solid #dfe3e8 !important;
+  // box-sizing: border-box;
+  border-radius: 4px !important;
+  padding: 1rem 0rem !important;
+}
+
+.css-pqjvzy-MuiSvgIcon-root-MuiSelect-icon {
+  margin: -0.3rem 0 0 0 !important;
+  width: 2rem !important;
+  height: 2rem !important;
+  color: #8692a7;
+}
+
+.css-6hp17o-MuiList-root-MuiMenu-list {
+  li {
+    font-size: 1.4rem !important;
   }
+}
+
+.css-11bfvty-MuiToolbar-root-MuiTablePagination-toolbar {
+  padding: 2rem 3rem 2rem 0 !important;
 }

@@ -7,13 +7,15 @@ const ReviewSection = () => {
   return (
     <div className="review-section">
       <div className="avatars">
-        <img src={user1} alt="" />
-        <img src={user2} alt="" />
-        <img src={user3} alt="" />
+        <img className="user-inactive" src={user1} alt="" />
+        <img className="user-active" src={user2} alt="" />
+        <img className="user-inactive" src={user3} alt="" />
       </div>
       <div className="note">
-        “This is a game changer. I've been able to quit my day job, and run my
-        own businesses because of this. Not only that, I've been able to thrive”
+        “This is a game changer. I've been able <br /> to quit my day job, and
+        run my own <br />
+        businesses because of this. Not only <br />
+        that, I've been able to thrive”
       </div>
       <div className="user">
         <p className="name">Joanna, 38</p>

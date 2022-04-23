@@ -1,5 +1,5 @@
 .review-section {
-  padding: 0 40rem;
+  // padding: 0 40rem;
   margin-top: 16rem;
   display: flex;
   flex-direction: column;
@@ -7,14 +7,29 @@
   align-items: center;
 
   @media only screen and (max-width: 30em) {
-    margin-top: 5rem;
+    margin-top: 7rem;
     padding: 0 2rem;
+    gap: 1rem;
   }
 
   .avatars {
     display: flex;
     align-items: center;
     gap: 3rem;
+
+    @media only screen and (max-width: 30em) {
+      gap: 1rem;
+    }
+
+    .user-inactive {
+      width: 4rem;
+      height: 4rem;
+    }
+
+    .user-active {
+      width: 6rem;
+      height: 6rem;
+    }
   }
 
   .note {
@@ -24,7 +39,7 @@
     text-align: center;
 
     @media only screen and (max-width: 30em) {
-      font-size: 2rem;
+      font-size: 1.6rem;
     }
   }
 

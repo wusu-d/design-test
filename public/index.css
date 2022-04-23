@@ -1,0 +1,63 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 75em) {
+  html {
+    font-size: 70%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+@font-face {
+  font-family: 'Sofia Sans';
+  src: url('/fonts/sofia_sans/otf/SofiaSans-SemiBold.otf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sofia Sans';
+  src: url('/fonts/sofia_sans/otf/SofiaSans-Bold.otf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sofia Sans';
+  src: url('/fonts/sofia_sans/otf/SofiaSans-Regular.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('/fonts/Graphik-Font-Family/GraphikRegular.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('/fonts/Graphik-Font-Family/GraphikSemiBold.otf');
+  font-weight: 600;
+  font-style: normal;
+}

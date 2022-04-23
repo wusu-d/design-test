@@ -1,7 +1,7 @@
 .download-section {
   position: relative;
   margin-top: 27rem;
-  padding: 0 45rem;
+  // padding: 0 45rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -15,6 +15,7 @@
   }
 
   h2 {
+    font-family: 'Sofia Sans';
     color: #0d100a;
     font-size: 5.6rem;
     font-weight: 700;
@@ -34,10 +35,20 @@
     }
   }
 
+  .appstoreBlack {
+    width: 18.6rem;
+    height: 5.5rem;
+  }
+
   .phone3 {
     position: absolute;
     top: -70rem;
     left: 0;
+
+    img {
+      width: 45.5rem;
+      height: 112.5rem;
+    }
 
     @media only screen and (max-width: 30em) {
       display: none;
@@ -48,6 +59,23 @@
     position: absolute;
     top: -50rem;
     right: 0;
+
+    img {
+      width: 65.8rem;
+      height: 117.2rem;
+    }
+
+    @media only screen and (max-width: 30em) {
+      display: none;
+    }
+  }
+
+  .arrow {
+    position: absolute;
+    top: 17rem;
+    left: 45rem;
+    width: 6.3rem;
+    height: 7.7rem;
 
     @media only screen and (max-width: 30em) {
       display: none;

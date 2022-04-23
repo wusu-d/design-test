@@ -16,6 +16,7 @@ import cbs from '../../assets/cbs.png';
 import usatoday from '../../assets/usatoday.png';
 import logo1 from '../../assets/xsissors-2.png';
 import crown from '../../assets/crwnBlack.png';
+import arrow from '../../assets/squiggly.png';
 import { ReactComponent as TwitterSVG } from '../../assets/twitter.svg';
 import { ReactComponent as FacebookSVG } from '../../assets/facebook.svg';
 import { ReactComponent as InstagramSVG } from '../../assets/instagram.svg';
@@ -44,7 +45,7 @@ const LandingTwo = () => {
           We help stylists own their narrative, build <br />
           an empire and be their own boss
         </p>
-        <img src={appstoreBlack} alt="" />
+        <img className="appstoreBlack" src={appstoreBlack} alt="" />
         <img className="phone1" src={phone1} alt="phone showing some info" />
         <img className="phone2" src={phone2} alt="phone showing some info" />
       </div>
@@ -69,35 +70,45 @@ const LandingTwo = () => {
               <img src={wallet} alt="" className="cardImg" />
               <p className="heading">Collect</p>
               <p className="note">
-                No dongle or hardware needed. All you need to collect payments
-                is your iphone
+                Collect payments with only a tap from your phone. No hardware
+                needed
               </p>
             </div>
             <div className="card">
               <img src={chart} alt="" className="cardImg cardImg--chart" />
               <p className="heading">Thrive</p>
               <p className="note">
-                Withdraw cash out of your account whenever you want
+                Manage your earnings, customers and transactions, all from one
+                app
               </p>
             </div>
           </div>
         </div>
         <div className="sponsors">
-          <img src={nbc} alt="sponsor" />
-          <img src={fox} alt="sponsor" />
-          <img src={cbs} alt="sponsor" />
-          <img src={usatoday} alt="sponsor" />
-          <img src={nbc} alt="sponsor" />
-          <img src={fox} alt="sponsor" />
+          <img className="nbc" src={nbc} alt="sponsor" />
+          <img className="fox" src={fox} alt="sponsor" />
+          <img className="cbs" src={cbs} alt="sponsor" />
+          <img className="usatoday" src={usatoday} alt="sponsor" />
+          <img className="nbc" src={nbc} alt="sponsor" />
+          <img className="fox" src={fox} alt="sponsor" />
         </div>
       </div>
 
       <ReviewSection />
 
       <div className="download-section">
-        <h2>Download Xissors Mobile App</h2>
-        <p>Download Xissors App on any iPhone from the App Store</p>
-        <img src={appstoreBlack} alt="download from apple store" />
+        <h2>
+          Download Xissors <br /> Mobile App
+        </h2>
+        <p>
+          Download Xissors App on any iPhone <br />
+          from the App Store
+        </p>
+        <img
+          className="storeBlack"
+          src={appstoreBlack}
+          alt="download from apple store"
+        />
         <div className="phone3">
           <img src={phone3} alt="phone" />
         </div>
@@ -107,12 +118,13 @@ const LandingTwo = () => {
         <div className="payment">
           <img src={payment} alt="phone" />
         </div>
+        <img className="arrow" src={arrow} alt="" />
       </div>
 
       <footer className="footer">
         <div className="footerWrapper">
           <div>
-            <img src={logo1} alt="" />
+            <img className="logo1" src={logo1} alt="" />
           </div>
           <div className="bottom">
             <div className="left">
@@ -129,8 +141,8 @@ const LandingTwo = () => {
             </div>
           </div>
           <div className="footlinks">
-            <Link to="/dashboard">Next Page</Link>
             <Link to="/">Back</Link>
+            <Link to="/dashboard">Next Page</Link>
           </div>
         </div>
       </footer>

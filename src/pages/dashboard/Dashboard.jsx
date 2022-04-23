@@ -14,9 +14,9 @@ const Dashboard = () => {
           Date Range: All Time <DownSVG className="range__arrow" />
         </div>
         <div className="widgets">
-          <Widget title="Total loan collected" amount="₦100,000,000" />
-          <Widget title="Total loan repayed" amount="₦90,000,000" />
-          <Widget title="Repayment Due" amount="₦10,000,000" />
+          <Widget title="Total loan collected" amount="N100,000,000" />
+          <Widget title="Total loan repayed" amount="N90,000,000" />
+          <Widget title="Repayment Due" amount="N10,000,000" />
           <Widget title="Pending loans" amount="200" />
           <Widget title="Approved loans" amount="1,200" />
           <Widget title="Total No of clusters" amount="6,000" />
