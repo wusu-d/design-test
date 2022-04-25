@@ -84,6 +84,7 @@
     position: absolute;
     top: 38rem;
     left: 0;
+    z-index: 0;
 
     @media only screen and (max-width: 30em) {
       top: 20rem;
@@ -104,6 +105,7 @@
     position: absolute;
     top: 65rem;
     right: 0;
+    z-index: 0;
 
     @media only screen and (max-width: 30em) {
       top: 20rem;

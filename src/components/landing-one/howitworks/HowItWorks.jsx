@@ -10,7 +10,7 @@ import './HowItWorks.scss';
 const HowItWorks = () => {
   return (
     <div className="howitwork-section">
-      <img className="howgradient" src={howBackground} alt="" />
+      <img className="sectionBackground" src={howBackground} alt="" />
       <div className="howitwork">
         <img className="workgradient" src={howitwork} alt="" />
         <h2 className="heading">How it works</h2>

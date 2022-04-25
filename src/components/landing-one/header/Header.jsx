@@ -2,18 +2,16 @@ import appstore from '../../../assets/appstore.png';
 import crown from '../../../assets/crown.png';
 import phone1 from '../../../assets/phone1.png';
 import phone2 from '../../../assets/phone2.png';
+import headerImg from '../../../assets/header.png';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
 import './Header.scss';
 const Header = () => {
   return (
-    <div
-      className="header"
-      style={{ backgroundImage: `url(./assets/headerImg.svg)` }}
-    >
+    <div className="header" style={{ backgroundImage: `url(${headerImg})` }}>
       <div className="logo">
-        <img src="./assets/logo-1.svg" alt="logo" />
+        <LazyLoadImage effect="blur" src="./assets/logo-1.svg" alt="logo" />
       </div>
       <h1 className="heading">
         Get 40% commission for your sales
