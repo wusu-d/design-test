@@ -2,6 +2,8 @@ import appstoreblack from '../../../assets/appstore-black.png';
 import phone3 from '../../../assets/phone3.png';
 import phone4 from '../../../assets/phone4.png';
 import arrow from '../../../assets/squiggly.png';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import './DownloadSection.scss';
 
 const DownloadSection = () => {
@@ -14,18 +16,19 @@ const DownloadSection = () => {
         Download Xissors App on any iPhone from <br />
         the App Store
       </p>
-      <img
+      <LazyLoadImage
         className="appstoreBlack"
         src={appstoreblack}
         alt="download from apple store"
+        effect="blur"
       />
       <div className="phone3">
-        <img src={phone3} alt="phone" />
+        <LazyLoadImage src={phone3} alt="phone" effect="blur" />
       </div>
       <div className="phone4">
-        <img src={phone4} alt="phone" />
+        <LazyLoadImage src={phone4} alt="phone" effect="blur" />
       </div>
-      <img className="arrow" src={arrow} alt="" />
+      <img className="arrow" src={arrow} alt="" effect="blur" />
     </div>
   );
 };

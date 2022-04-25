@@ -58,7 +58,13 @@ const Cluster = () => {
             Authorization: `Bearer a56d34d777288aa5e18adfb06d2806e88283ec6e`,
           },
         })
-        .then()
+        .then(
+        //   response => {
+        //   if (response.status < 200 || response.status >= 400) {
+        //     throw response.message
+        //   }
+        // }
+        )
         .catch((err) => {
           if (err.response) {
             console.log(err.response.data);

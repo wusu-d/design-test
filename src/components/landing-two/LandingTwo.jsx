@@ -21,6 +21,8 @@ import { ReactComponent as TwitterSVG } from '../../assets/twitter.svg';
 import { ReactComponent as FacebookSVG } from '../../assets/facebook.svg';
 import { ReactComponent as InstagramSVG } from '../../assets/instagram.svg';
 import ReviewSection from '../landing-one/review-section/ReviewSection';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import './LandingTwo.scss';
 import { Link } from 'react-router-dom';
 
@@ -45,9 +47,24 @@ const LandingTwo = () => {
           We help stylists own their narrative, build <br />
           an empire and be their own boss
         </p>
-        <img className="appstoreBlack" src={appstoreBlack} alt="" />
-        <img className="phone1" src={phone1} alt="phone showing some info" />
-        <img className="phone2" src={phone2} alt="phone showing some info" />
+        <LazyLoadImage
+          effect="black-and-white"
+          className="appstoreBlack"
+          src={appstoreBlack}
+          alt=""
+        />
+        <LazyLoadImage
+          effect="black-and-white"
+          className="phone1"
+          src={phone1}
+          alt="phone showing some info"
+        />
+        <LazyLoadImage
+          effect="black-and-white"
+          className="phone2"
+          src={phone2}
+          alt="phone showing some info"
+        />
       </div>
 
       <div className="howitworks">
@@ -60,14 +77,24 @@ const LandingTwo = () => {
           </p>
           <div className="cards">
             <div className="card">
-              <img src={money} alt="" className="cardImg" />
+              <LazyLoadImage
+                effect="opacity"
+                src={money}
+                alt=""
+                className="cardImg"
+              />
               <p className="heading">Earn</p>
               <p className="note">
                 Earn a 40% commission on products you sell to your customers
               </p>
             </div>
             <div className="card">
-              <img src={wallet} alt="" className="cardImg" />
+              <LazyLoadImage
+                effect="opacity"
+                src={wallet}
+                alt=""
+                className="cardImg"
+              />
               <p className="heading">Collect</p>
               <p className="note">
                 Collect payments with only a tap from your phone. No hardware
@@ -75,7 +102,12 @@ const LandingTwo = () => {
               </p>
             </div>
             <div className="card">
-              <img src={chart} alt="" className="cardImg cardImg--chart" />
+              <LazyLoadImage
+                effect="opacity"
+                src={chart}
+                alt=""
+                className="cardImg cardImg--chart"
+              />
               <p className="heading">Thrive</p>
               <p className="note">
                 Manage your earnings, customers and transactions, all from one
@@ -85,12 +117,42 @@ const LandingTwo = () => {
           </div>
         </div>
         <div className="sponsors">
-          <img className="nbc" src={nbc} alt="sponsor" />
-          <img className="fox" src={fox} alt="sponsor" />
-          <img className="cbs" src={cbs} alt="sponsor" />
-          <img className="usatoday" src={usatoday} alt="sponsor" />
-          <img className="nbc" src={nbc} alt="sponsor" />
-          <img className="fox" src={fox} alt="sponsor" />
+          <LazyLoadImage
+            effect="opacity"
+            className="nbc"
+            src={nbc}
+            alt="sponsor"
+          />
+          <LazyLoadImage
+            effect="opacity"
+            className="fox"
+            src={fox}
+            alt="sponsor"
+          />
+          <LazyLoadImage
+            effect="opacity"
+            className="cbs"
+            src={cbs}
+            alt="sponsor"
+          />
+          <LazyLoadImage
+            effect="opacity"
+            className="usatoday"
+            src={usatoday}
+            alt="sponsor"
+          />
+          <LazyLoadImage
+            effect="opacity"
+            className="nbc"
+            src={nbc}
+            alt="sponsor"
+          />
+          <LazyLoadImage
+            effect="opacity"
+            className="fox"
+            src={fox}
+            alt="sponsor"
+          />
         </div>
       </div>
 
@@ -104,19 +166,20 @@ const LandingTwo = () => {
           Download Xissors App on any iPhone <br />
           from the App Store
         </p>
-        <img
+        <LazyLoadImage
+          effect="blur"
           className="storeBlack"
           src={appstoreBlack}
           alt="download from apple store"
         />
         <div className="phone3">
-          <img src={phone3} alt="phone" />
+          <LazyLoadImage effect="blur" src={phone3} alt="phone" />
         </div>
         <div className="phone4">
-          <img src={phone4} alt="phone" />
+          <LazyLoadImage effect="blur" src={phone4} alt="phone" />
         </div>
         <div className="payment">
-          <img src={payment} alt="phone" />
+          <LazyLoadImage effect="blur" src={payment} alt="phone" />
         </div>
         <img className="arrow" src={arrow} alt="" />
       </div>
@@ -124,7 +187,12 @@ const LandingTwo = () => {
       <footer className="footer">
         <div className="footerWrapper">
           <div>
-            <img className="logo1" src={logo1} alt="" />
+            <LazyLoadImage
+              effect="black-and-white"
+              className="logo1"
+              src={logo1}
+              alt=""
+            />
           </div>
           <div className="bottom">
             <div className="left">

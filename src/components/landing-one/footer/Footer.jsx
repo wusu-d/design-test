@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom';
 import logo from '../../../assets/xissors.png';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import './Footer.scss';
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <img src={logo} alt="" />
+      <LazyLoadImage effect="blur" src={logo} alt="" />
       <p className="questions">Got Questions?</p>
       <p className="email">hello@xissors.com</p>
       <p className="copyright">© Xissors 2022</p>

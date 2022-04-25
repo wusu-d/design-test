@@ -4,6 +4,8 @@ import nbc from '../../../assets/nbc.png';
 import fox from '../../../assets/fox.png';
 import cbs from '../../../assets/cbs.png';
 import usatoday from '../../../assets/usatoday.png';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import './HowItWorks.scss';
 const HowItWorks = () => {
   return (
@@ -39,12 +41,17 @@ const HowItWorks = () => {
         </div>
       </div>
       <div className="sponsors">
-        <img className="nbc" src={nbc} alt="sponsor" />
-        <img className="fox" src={fox} alt="sponsor" />
-        <img className="cbs" src={cbs} alt="sponsor" />
-        <img className="usatoday" src={usatoday} alt="sponsor" />
-        <img className="nbc" src={nbc} alt="sponsor" />
-        <img className="fox" src={fox} alt="sponsor" />
+        <LazyLoadImage effect="blur" className="nbc" src={nbc} alt="sponsor" />
+        <LazyLoadImage effect="blur" className="fox" src={fox} alt="sponsor" />
+        <LazyLoadImage effect="blur" className="cbs" src={cbs} alt="sponsor" />
+        <LazyLoadImage
+          effect="blur"
+          className="usatoday"
+          src={usatoday}
+          alt="sponsor"
+        />
+        <LazyLoadImage effect="blur" className="nbc" src={nbc} alt="sponsor" />
+        <LazyLoadImage effect="blur" className="fox" src={fox} alt="sponsor" />
       </div>
     </div>
   );
