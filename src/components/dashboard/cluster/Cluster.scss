@@ -37,13 +37,13 @@
   // }
 }
 
-.css-11xur9t-MuiPaper-root-MuiTableContainer-root {
+.MuiPaper-root.MuiTableContainer-root.MuiPaper-rounded {
   border-radius: 2rem !important;
 }
 
-.css-pdct74-MuiTablePagination-selectLabel,
-.css-levciy-MuiTablePagination-displayedRows,
-.css-6hp17o-MuiList-root-MuiMenu-list {
+.MuiTablePagination-selectLabel,
+.MuiTablePagination-displayedRows,
+.MuiList-root.MuiMenu-list {
   font-family: 'Graphik' !important;
   font-weight: 400 !important;
   font-size: 1.4rem !important;
@@ -53,7 +53,7 @@
   opacity: 0.9 !important;
 }
 
-.css-16c50h-MuiInputBase-root-MuiTablePagination-select {
+.MuiInputBase-root.MuiTablePagination-select {
   font-family: 'Graphik' !important;
   font-size: 1.4rem !important;
   background: #ffffff !important;
@@ -63,19 +63,27 @@
   padding: 1rem 0rem !important;
 }
 
-.css-pqjvzy-MuiSvgIcon-root-MuiSelect-icon {
+.MuiSvgIcon-root.MuiSelect-icon {
   margin: -0.3rem 0 0 0 !important;
   width: 2rem !important;
   height: 2rem !important;
   color: #8692a7;
 }
 
-.css-6hp17o-MuiList-root-MuiMenu-list {
+.MuiList-root.MuiMenu-list {
   li {
     font-size: 1.4rem !important;
   }
 }
 
-.css-11bfvty-MuiToolbar-root-MuiTablePagination-toolbar {
+.MuiToolbar-root.MuiTablePagination-toolbar {
   padding: 2rem 3rem 2rem 0 !important;
+}
+
+.MuiTablePagination-select.MuiSelect-select.MuiSelect-standard.MuiInputBase-input {
+  font-size: 1.6rem !important;
+  margin-top: 1rem !important;
+  color: #8692a7 !important;
+  font-family: 'Graphik' !important;
+  font-weight: 400 !important;
 }
