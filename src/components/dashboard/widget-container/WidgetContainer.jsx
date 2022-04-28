@@ -6,6 +6,8 @@ import './WidgetContainer.scss';
 
 const WidgetContainer = () => {
   const [summary, setSummary] = useState(null);
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(true);
   let moneyLocale = Intl.NumberFormat('en-US');
 
   useEffect(() => {
@@ -22,39 +24,31 @@ const WidgetContainer = () => {
             Authorization: `Bearer a56d34d777288aa5e18adfb06d2806e88283ec6e`,
           },
         })
-        .then
-        //   response => {
-        //   if (response.status < 200 || response.status >= 400) {
-        //     throw response.message
-        //   }
-        // }
-        ()
         .catch((err) => {
-          if (err.response) {
-            console.log(err.response.data);
-            console.log(err.response.status);
-            console.log(err.response.headers);
-          } else if (err.request) {
-            console.log(err.request);
-          } else {
-            // Something happened in setting up the request that triggered an Err
-            console.log('Err', err.message);
-          }
-          throw err.message;
+          setError(err.message);
+          setLoading(false);
         });
 
-      console.log(response.summary);
-
+      console.log(response);
       setSummary(response.summary);
+      setLoading(false);
     };
 
     fetchSummary();
   }, []);
 
-  if (!summary) {
+  if (loading) {
     return (
       <div className="loading-spinner">
         <CircularProgress />
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="error-ms">
+        ⚠️{error}⚠️<p>Oops something went wrong</p>
       </div>
     );
   }

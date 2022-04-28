@@ -16,6 +16,11 @@ import axios from 'axios';
 const Cluster = () => {
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(10);
+  const [error, setError] = React.useState(null);
+  const [loading, setLoading] = React.useState(true);
+  const [rows, setRows] = React.useState(null);
+  const [count, setCount] = React.useState(0);
+  let moneyLocale = Intl.NumberFormat('en-US');
 
   const handleChangePage = (event, newPage) => {
     setPage(newPage);
@@ -24,6 +29,14 @@ const Cluster = () => {
   const handleChangeRowsPerPage = (event) => {
     setRowsPerPage(+event.target.value);
     setPage(0);
+  };
+
+  const handleBackButtonClick = (event) => {
+    handleChangePage(event, page - 1);
+  };
+
+  const handleNextButtonClick = (event) => {
+    handleChangePage(event, page + 1);
   };
 
   const StyledTableCell = styled(TableCell)(() => ({
@@ -41,8 +54,6 @@ const Cluster = () => {
       border: 0,
     },
   }));
-  const [rows, setRows] = React.useState(null);
-  let moneyLocale = Intl.NumberFormat('en-US');
 
   React.useEffect(() => {
     const fetchCluster = async () => {
@@ -51,51 +62,41 @@ const Cluster = () => {
       } = await axios
         .get('https://admin.welkom-u.ca/api/data:get', {
           params: {
-            page: 1,
+            page: page,
             pageSize: 10,
           },
           headers: {
             Authorization: `Bearer a56d34d777288aa5e18adfb06d2806e88283ec6e`,
           },
         })
-        .then
-        //   response => {
-        //   if (response.status < 200 || response.status >= 400) {
-        //     throw response.message
-        //   }
-        // }
-        ()
         .catch((err) => {
-          if (err.response) {
-            console.log(err.response.data);
-            console.log(err.response.status);
-            console.log(err.response.headers);
-          } else if (err.request) {
-            console.log(err.request);
-          } else {
-            // Something happened in setting up the request that triggered an Err
-            console.log('Err', err.message);
-          }
-          throw err.message;
+          setError(err.message);
+          setLoading(false);
+          setRows(null);
         });
 
       console.log(response);
-
       setRows(response.cluster.items);
+      setCount(response.cluster.totalCount);
+      setLoading(false);
     };
 
     fetchCluster();
-  }, []);
+  }, [page]);
 
-  if (!rows) {
-    return (
-      <div className="loading-spinner">
-        <CircularProgress />
-      </div>
-    );
-  } else {
-    return (
-      <div>
+  return (
+    <div>
+      {error && (
+        <div className="error-msg">
+          ⚠️{error}⚠️<p>Oops something went wrong </p>
+        </div>
+      )}
+      {loading && (
+        <div className="loading-spinner">
+          <CircularProgress />
+        </div>
+      )}
+      {rows && (
         <TableContainer component={Paper} className="table">
           <Table sx={{ width: '100%' }} aria-label="simple table">
             <TableHead>
@@ -139,16 +140,24 @@ const Cluster = () => {
           <TablePagination
             rowsPerPageOptions={[10, 25, 100]}
             component="div"
-            count={rows.length}
+            count={count}
             rowsPerPage={rowsPerPage}
             page={page}
             onPageChange={handleChangePage}
             onRowsPerPageChange={handleChangeRowsPerPage}
+            backIconButtonProps={{
+              onclick: handleBackButtonClick,
+              disabled: page === 0,
+            }}
+            nextIconButtonProps={{
+              onclick: handleNextButtonClick,
+              disabled: page === count - 1,
+            }}
           />
         </TableContainer>
-      </div>
-    );
-  }
+      )}
+    </div>
+  );
 };
 
 export default Cluster;
